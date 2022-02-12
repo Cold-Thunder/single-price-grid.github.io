@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#E6EFF6;
+    max-width:100%;
+}
+.col-6 {width: 50%;}
+.col-12 {width: 100%;}
+.main{
+
+}
+.head{
+    justify-content:center;
+    content:center;
+    margin:auto;
+    margin-top:200px;
+    background-color:#FFFFFF;
+    width:50%;
+    border-radius:10px 10px 0 0;
+    box-shadow:1px 1px 10px rgb(0,0,0, 0.4);
+}
+.head h1{
+    color:#8DD7D7;
+    padding:40px;
+    padding-bottom:30px;
+    font-size:28px;
+}
+.head h2, p{
+    padding:40px;
+}
+.head p{
+    color:rgb(0,0,0, 0.3);
+    line-height: 25px;
+    font-size:16px;
+    font-weight:bold;
+    padding-top:10px;
+}
+.head h2{
+    padding-top:0;
+    padding-bottom:0;
+    color:#C8D67D;
+    font-size:20px;
+}
+.price{
+    width:50%;
+
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    content:center;
+    margin:auto;
+    border-radius:0 0 10px 10px;
+    box-shadow:1px 1px 10px rgb(0,0,0, 0.4);
+}
+.left{
+    background-color:#2BB3B1;
+    border-radius:0 0 0 10px; 
+    
+}
+.left h2, .amount , button{
+    margin-left:10%;
+}
+.left h2{
+    font-size:24px;
+    color:white;
+    font-size: 20px;
+    padding-top:50px;
+} 
+.left .amount{
+    
+    display: flex;
+    flex-direction:row;
+    margin-top: 20px;
+}
+.left .amount b{
+    font-size: 25px;
+    color:white;
+}
+.left .amount p{
+    padding-top:5px;
+    padding-left:10px;
+    color:rgb(255,255,255, 0.5);
+}
+.left .des p{
+    color:white;
+    padding-top:0px;
+}
+.left button{
+    width:80%;
+    height:50px;
+    border-radius:8px;
+    border:none;
+    margin-bottom:40px;
+    background-color:#BEE032;
+    color:white;
+    font-size:18px;
+    box-shadow:1px 1px 10px rgb(0,0,0, 0.3);
+    cursor: pointer;
+}
+.right{
+    
+    background-color:#4ABEBD;
+    color:white;
+    border-radius:0 0 10px 0;
+}
+.right h2{
+    margin:50px 0 0 10%;
+    font-size:20px;
+}
+.right p{
+    line-height: 25px;
+    padding-top:15px;
+    padding-left:10%;
+    color:rgb(255, 255, 255, 0.8);
+    border-radius:0 0 0 15px;
+}
+
+
+
+@media (max-width:400px){
+    body{
+        max-width:100%;
+        font-size:60%;
+    }
+    .head{
+        display:flex;
+        flex-direction:column;
+        width:90%;
+        margin-top:50px;
+    }
+    .price{
+        display:flex;
+        flex-direction:column;
+        width:90%;
+    }
+    .left{
+        width:100%;
+        border-radius:0;
+        font-size:18px;
+        justify-content: center;
+        margin:auto;
+    }
+    .right{
+        width:100%;
+        border-radius:0 0 10px 10px;
+        font-size:18px;
+        justify-content: center;
+        margin:auto;
+    }
+}
